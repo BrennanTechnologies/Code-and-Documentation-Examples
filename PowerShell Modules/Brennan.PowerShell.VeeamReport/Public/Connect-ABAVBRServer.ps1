@@ -26,22 +26,22 @@ function Connect-ABAVBRServer {
         [PSCredential]$Credentials
         ,
         [Parameter(Mandatory = $false)]
-        [string]$VBRServer = "nymgmt-vem01.management.corp"
+        [string]$VBRServer = ""
         ,
         [Parameter(Mandatory = $false)]
-        [string]$ServiceAccount = "srv-devopsveeam"
+        [string]$ServiceAccount = ""
     )
     Begin {
         Write-Log -LogString "Start : $((Get-PSCallStack)[0].Command)" -LogLevel Output -LogObject $VeeamReportLog -ForegroundColor DarkGray
-        
-        if($null -eq $Credentials){
+
+        if ($null -eq $Credentials) {
             ### Get Credentials from Secret Server
             ###---------------------------------------------
             [PSCredential]$Credentials = Get-Secret -SecretName $ServiceAccount | Convert-secretToKerb -domain Management -prefix
         }
     }
     Process {
-        if ( [bool](Get-VBRServerSession) -eq $true){ 
+        if ( [bool](Get-VBRServerSession) -eq $true) {
             Disconnect-VBRServer
         }
         try {
@@ -49,7 +49,7 @@ function Connect-ABAVBRServer {
             ###---------------------------------------------
             Connect-VBRServer -Server $VBRServer -Credential $Credentials
             Write-Host ("Connected to Veeam VBR Server: " + $(Get-VBRServerSession).Server)  -ForegroundColor Green
-        } 
+        }
         catch {
             ### Send Alert
             ###---------------------------------------------
@@ -60,6 +60,6 @@ function Connect-ABAVBRServer {
         }
     }
     End {
-        if($DeveloperMode){Write-Log -LogString "End   : $((Get-PSCallStack)[0].Command)" -LogLevel Output -LogObject $VeeamReportLog -ForegroundColor DarkGray}
+        if ($DeveloperMode) { Write-Log -LogString "End   : $((Get-PSCallStack)[0].Command)" -LogLevel Output -LogObject $VeeamReportLog -ForegroundColor DarkGray }
     }
 }

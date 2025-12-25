@@ -41,7 +41,7 @@ The **Technical Design Docs** section contains detailed documentation and workfl
 - [script: Invoke-ADOcmd.ps1](PowerShell%20Scripts/Invoke-ADOcmd.ps1)
 	Used ADO.Net to create a basic SQL Server connection without needing to use (the huge! 100MB+) SQL SErver PowerShell module.
 
-- [module: Code-Signing](PowerShell%20Modules/Brennan%20Modules/Brennan.PowerShell.CodeSigning)
+- [module: Code-Signing](PowerShell%20Modules/Brennan.PowerShell.Modules/Brennan.PowerShell.CodeSigning)
 	PowerShell Module for Code Signing scripts & creating Encrypted Passwords using certificates.
 
 - module: ECI.EMI.Automation.VM.Prod.psm1 / .psd1

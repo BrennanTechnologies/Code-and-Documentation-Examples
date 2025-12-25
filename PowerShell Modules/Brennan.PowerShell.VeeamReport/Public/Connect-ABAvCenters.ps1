@@ -21,20 +21,16 @@ Connect-ABAVCenters @vCenters -SerivceAccount $svcAccount
 
 function Connect-ABAvCenters {
     [CmdletBinding()]
-    param( 
+    param(
         [Parameter(Mandatory = $false)]
         [PSCredential]$Credentials
         ,
         [Parameter(Mandatory = $false)]
-        [string]$ServiceAccount = "srv-devopsveeam"
+        [string]$ServiceAccount = ""
         ,
         [Parameter(Mandatory = $false)]
-        [array]$ABAvCenters =  @(
-            "nymgmtvc01.management.corp1",
-            "sfmgmtvc01.management.corp",
-            "l1mgmtvc01.management.corp",
-            "txmgmtvc01.management.corp",
-            "l2mgmtvc01.management.corp"
+        [array]$ABAvCenters = @(
+
         )
     )
 
@@ -53,11 +49,11 @@ function Connect-ABAvCenters {
 
         ### Connect to VIServers
         ###---------------------------------------------
-        foreach ($vCenter in $ABAvCenters){
+        foreach ($vCenter in $ABAvCenters) {
             try {
                 Connect-VIServer -Server $vCenter -Credential $Credentials -ErrorAction Stop
                 Write-Log -LogString ("Connected to vCenter: " + $vCenter) -LogLevel Output -LogObject $VeeamReportLog -ForegroundColor Magenta
-            } 
+            }
             catch {
                 ### Send Alert
                 ###---------------------------------------------
@@ -69,10 +65,10 @@ function Connect-ABAvCenters {
         }
         ### Verify vCenter Connections
         ###---------------------------------------------
-        foreach ($vCenter in $ABAvCenters){
-            if (($global:defaultviservers).Name -contains $vCenter){
+        foreach ($vCenter in $ABAvCenters) {
+            if (($global:defaultviservers).Name -contains $vCenter) {
                 Write-Log -LogString ("Verified vCenter Connection: " + $vCenter) -LogLevel Output -LogObject $VeeamReportLog  -ForegroundColor DarkMagenta
-            } 
+            }
             else {
                 ### Send Alert
                 ###---------------------------------------------
