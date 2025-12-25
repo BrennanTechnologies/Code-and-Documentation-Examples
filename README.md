@@ -28,7 +28,7 @@ The **Technical Design Docs** section contains detailed documentation and workfl
 **Database schema design for VM deployment**
 - [VMDeploy-Database Schema Design](Technical%20Design%20Docs/VMDeploy-Database%20Schema%20Design.pdf)
 
-## Scripts & Modules
+## PowerShell Scripts & Modules
 
 ### Modules
 - [Brennan.PowerShell.Core](Brennan.PowerShell.Core/)
@@ -57,7 +57,7 @@ The **Technical Design Docs** section contains detailed documentation and workfl
 - [New-SignedScript.ps1](PowerShell%20Scripts/New-SignedScript.ps1): Standalone script to sign PowerShell scripts.
 - [Invoke-ADOcmd.ps1](PowerShell%20Scripts/Invoke-ADOcmd.ps1): Standalone script for basic SQL Server connection using ADO.NET.
 - [Import-ABAPfxCertificate.ps1](PowerShell%20Scripts/Import-ABAPfxCertificate.ps1): Imports a PFX certificate for code signing.
-- [LazyGit.ps1](PowerShell%20Scripts/LazyGit.ps1): Helper for common Git operations in PowerShell.
 
 
 
+## Python Scripts & Modules
