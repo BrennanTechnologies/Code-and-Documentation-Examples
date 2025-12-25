@@ -18,13 +18,9 @@ The **Technical Design Docs** section contains detailed documentation and workfl
 - [Get Deleted Teams Sites - Workflow](Technical%20Design%20Docs/Get%20Deleted%20Teams%20Sites%20-%20Technical%20Documentation%20-%20Workflow.pdf)
 - [Get Deleted Teams Sites - Technical Documentation](Technical%20Design%20Docs/Get%20Deleted%20Teams%20Sites%20-%20Technical%20Documentation%202025-12-12.pdf)
 
-
 **Server management and provisioning workflows**
 - [Server Management Workflow](Technical%20Design%20Docs/Server%20Management%20Workflow.pdf)
 - [Server Provisioning Workflow](Technical%20Design%20Docs/Server%20Provisioning%20Workflow.pdf)
-
-**VMWare Automation**
-- [VMWare Automation](Technical%20Design%20Docs/VMWare%20Automation.pdf)
 
 **Active Directory design (OUs, GPOs, Groups)**
 - [Risk AD Design - OUs GPOs & Groups](Technical%20Design%20Docs/Risk%20AD%20Design%20-%20OUs%20GPOs%20%26%20Groups.pdf)
