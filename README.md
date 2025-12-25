@@ -32,7 +32,7 @@ The **Technical Design Docs** section contains detailed documentation and workfl
 - [module: Brennan.PowerShell.Core](PowerShell%20Modules/Brennan.PowerShell.Core)
 **Core PowerShell utilities for Brennan Technologies** - Enterprise-grade module providing Microsoft Graph connectivity, logging, and common functions optimized for Azure Functions, Azure Automation Runbooks, and legacy PowerShell 5.1+ environments.
 
-- [script: Veeam-Report](PowerShell%20Scripts\_VeeamReport.ps1)
+- [script: Veeam-Report](PowerShell%20Scripts/_VeeamReport.ps1)
 	Generates and emails a report of servers without Veeam restore points. Supports filtering by VM name, tags, and server record age.
 
 - [script: New-EncryptedPassword.ps1](PowerShell%20Scripts/New-EncryptedPassword.ps1)
