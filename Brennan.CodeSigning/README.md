@@ -1,3 +1,5 @@
+![Brennan Technologies Logo](../Resources/images/bizcard.png)
+
 # Brennan.CodeSigning #
 
 ### Overview ###
@@ -21,7 +23,7 @@ This module provides the following commands:
 * New-EncryptedPassword
 
 * Import-PfxCertificate
-    
+
 ### Author ###
 Author: Chris Brennan
 
