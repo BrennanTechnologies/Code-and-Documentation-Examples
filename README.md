@@ -29,31 +29,34 @@ The **Technical Design Docs** section contains detailed documentation and workfl
 - [VMDeploy-Database Schema Design](Technical%20Design%20Docs/VMDeploy-Database%20Schema%20Design.pdf)
 
 ## Scripts & Modules
-- [module: Brennan.PowerShell.Core](PowerShell%20Modules/Brennan.PowerShell.Core)
-**Core PowerShell utilities for Brennan Technologies** - Enterprise-grade module providing Microsoft Graph connectivity, logging, and common functions optimized for Azure Functions, Azure Automation Runbooks, and legacy PowerShell 5.1+ environments.
 
-- [script: Veeam-Report](PowerShell%20Scripts/_VeeamReport.ps1)
-	Generates and emails a report of servers without Veeam restore points. Supports filtering by VM name, tags, and server record age.
+### Modules
+- [Brennan.PowerShell.Core](Brennan.PowerShell.Core/)
+	- Core utilities for Microsoft Graph connectivity, logging, and common automation functions. Includes:
+		- [Connect-MgGraphAPI](Brennan.PowerShell.Core/Public/Connect-MgGraphAPI.ps1): Connect to Microsoft Graph API.
+		- [Write-Log](Brennan.PowerShell.Core/Public/Write-Log.ps1): Structured logging for scripts and modules.
 
-- [script: New-EncryptedPassword.ps1](PowerShell%20Scripts/New-EncryptedPassword.ps1)
-	Generates and encrypted password using AES-256 Encryption Key.
+- [Brennan.PowerShell.VeeamReport](Brennan.PowerShell.VeeamReport/)
+	- Veeam reporting automation. Includes:
+		- [Get-VeeamRestorePoints](Brennan.PowerShell.VeeamReport/Public/Get-VeeamRestorePoints.ps1): Collects and matches Veeam restore points with VM names.
+		- [Send-EmailReport](Brennan.PowerShell.VeeamReport/Public/Send-EmailReport.ps1): Sends customizable email reports for VMs missing restore points.
+		- [Get-ServerFromSQL](Brennan.PowerShell.VeeamReport/Public/Get-ServerFromSQL.ps1): Retrieves server records from SQL Server.
 
-- [script: Invoke-ADOcmd.ps1](PowerShell%20Scripts/Invoke-ADOcmd.ps1)
-	Used ADO.Net to create a basic SQL Server connection without needing to use (the huge! 100MB+) SQL SErver PowerShell module.
+- [Brennan.CodeSigning](Brennan.CodeSigning/)
+	- Code signing and encryption utilities. Includes:
+		- [New-EncryptedPassword](Brennan.CodeSigning/Public/New-EncryptedPassword.ps1): Generate AES-256 encrypted passwords.
+		- [New-SignedScript](Brennan.CodeSigning/Public/New-SignedScript.ps1): Sign PowerShell scripts with a certificate.
 
-- [module: Code-Signing](PowerShell%20Modules/Brennan.PowerShell.Modules/Brennan.PowerShell.CodeSigning)
-	PowerShell Module for Code Signing scripts & creating Encrypted Passwords using certificates.
+- [Brennan.SQL](Brennan.SQL/)
+	- SQL Server automation helpers. Includes:
+		- [Invoke-ADOcmd](Brennan.SQL/Public/Invoke-ADOcmd.ps1): Lightweight ADO.NET SQL command execution.
 
-- module: ECI.EMI.Automation.VM.Prod.psm1 / .psd1
-	PowerShell module for VM provisioning and automation, including functions for managing VMware templates and server records.
-
-- [script: Get-ServerFromSQL.ps1](PowerShell%20Modules/Brennan.SQL)
-	Retrieves server records from SQL Server databases.
-
-- script: Get-VeeamRestorePoints.ps1
-	Collects Veeam restore points and matches them with VM names.
-
-- [script: Send-EmailReport.ps1](PowerShell%20Scripts/Send-EmailReport.ps1)
-	Sends email reports for VMs missing Veeam restore points, with customizable parameters for recipients and filtering.
+### Standalone Scripts
+- [Veeam-Report](PowerShell%20Scripts/_VeeamReport.ps1): Generates and emails a report of servers without Veeam restore points. Supports filtering by VM name, tags, and server record age.
+- [New-EncryptedPassword.ps1](PowerShell%20Scripts/New-EncryptedPassword.ps1): Standalone script to generate an encrypted password.
+- [New-SignedScript.ps1](PowerShell%20Scripts/New-SignedScript.ps1): Standalone script to sign PowerShell scripts.
+- [Invoke-ADOcmd.ps1](PowerShell%20Scripts/Invoke-ADOcmd.ps1): Standalone script for basic SQL Server connection using ADO.NET.
+- [Import-ABAPfxCertificate.ps1](PowerShell%20Scripts/Import-ABAPfxCertificate.ps1): Imports a PFX certificate for code signing.
+- [LazyGit.ps1](PowerShell%20Scripts/LazyGit.ps1): Helper for common Git operations in PowerShell.
 
 
