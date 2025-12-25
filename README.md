@@ -1,4 +1,5 @@
-![Brennan Technologies Logo](./Resources/images/BrennanLogo_BizCard_White.png)
+![Brennan Technologies Logo](./Resources/images/bizcard.png)
+
 
 # Code & Documentation Examples
 
