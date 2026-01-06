@@ -1,0 +1,216 @@
+
+2025-12-14 14:47:30	[callStack: Import-RequiredModules<Begin>]	[HEADER]	=== Importing required modules... ===
+2025-12-14 14:47:30	[callStack: Import-RequiredModules<Process>]	[INFO]	Checking for module: Microsoft.Graph.Users
+2025-12-14 14:47:31	[callStack: Import-RequiredModules<Process>]	[SUCCESS]	Module imported: Microsoft.Graph.Users
+2025-12-14 14:47:31	[callStack: Import-RequiredModules<Process>]	[INFO]	Checking for module: Microsoft.Graph.Groups
+2025-12-14 14:47:32	[callStack: Import-RequiredModules<Process>]	[SUCCESS]	Module imported: Microsoft.Graph.Groups
+2025-12-14 14:47:32	[callStack: Import-RequiredModules<End>]	[SUCCESS]	All required modules loaded successfully
+
+2025-12-14 14:47:32	[callStack: Initialize-Script]	[HEADER]	=== Script Template v1.0.0 ===
+2025-12-14 14:47:32	[callStack: Initialize-Script]	[INFO]	Started at: 2025-12-14 14:47:32
+2025-12-14 14:47:32	[callStack: Initialize-Script]	[INFO]	User: brenn
+2025-12-14 14:47:32	[callStack: Initialize-Script]	[INFO]	Computer: ASUS-MAIN
+2025-12-14 14:47:32	[callStack: Initialize-Script]	[INFO]	PowerShell Version: 7.5.4
+2025-12-14 14:47:32	[callStack: Initialize-Script]	[INFO]	Log Mode: Daily
+2025-12-14 14:47:32	[callStack: Connect-GraphAPI]	[INFO]	Connecting to Microsoft Graph API...
+2025-12-14 14:47:32	[callStack: Connect-GraphAPI]	[SUCCESS]	Successfully connected to Microsoft Graph
+2025-12-14 14:47:34	[callStack: Get-MgGraphAPIPermissions]	[SUCCESS]	Service Principal: M365-PowerShell-Automation
+2025-12-14 14:47:34	[callStack: Get-MgGraphAPIPermissions]	[SUBITEM]	  Object ID: 8eda3f3a-d1c0-4a10-964b-1fd3a3bad1fe
+
+2025-12-14 14:47:34	[callStack: Get-MgGraphAPIPermissions]	[HEADER]	=== Application Permissions (App Roles) ===
+2025-12-14 14:47:34	[callStack: Get-MgGraphAPIPermissions]	[SUBITEM]	  • Directory.Read.All
+2025-12-14 14:47:35	[callStack: Get-MgGraphAPIPermissions]	[SUBITEM]	  • User.Read.All
+2025-12-14 14:47:35	[callStack: Get-MgGraphAPIPermissions]	[SUBITEM]	  • Organization.Read.All
+2025-12-14 14:47:35	[callStack: Get-MgGraphAPIPermissions]	[SUBITEM]	  • AuditLog.Read.All
+2025-12-14 14:47:35	[callStack: Get-MgGraphAPIPermissions]	[SUBITEM]	  • Reports.Read.All
+
+2025-12-14 14:47:35	[callStack: Get-MgGraphAPIPermissions]	[HEADER]	=== Delegated Permissions (OAuth2 Grants) ===
+2025-12-14 14:47:35	[callStack: Get-MgGraphAPIPermissions]	[SUBITEM]	  Resource: Microsoft Graph
+
+2025-12-14 14:47:35	[callStack: Get-MgGraphAPIPermissions]	[HEADER]	=== Summary ===
+2025-12-14 14:47:35	[callStack: Connect-GraphAPI]	[INFO]	Active permissions: 
+2025-12-14 14:47:35	[callStack: Get-YourData]	[INFO]	Retrieving data from Graph API...
+2025-12-14 14:47:35	[callStack: Get-YourData]	[SUCCESS]	Retrieved 100 items
+2025-12-14 14:47:35	[callStack: Process-Data]	[INFO]	Processing 100 items...
+2025-12-14 14:47:36	[callStack: Process-Data]	[SUBITEM]	  Processed 10 / 100 items...
+2025-12-14 14:47:37	[callStack: Process-Data]	[SUBITEM]	  Processed 20 / 100 items...
+2025-12-14 14:47:38	[callStack: Process-Data]	[SUBITEM]	  Processed 30 / 100 items...
+2025-12-14 14:47:39	[callStack: Process-Data]	[SUBITEM]	  Processed 40 / 100 items...
+2025-12-14 14:47:40	[callStack: Process-Data]	[SUBITEM]	  Processed 50 / 100 items...
+2025-12-14 14:47:41	[callStack: Process-Data]	[SUBITEM]	  Processed 60 / 100 items...
+2025-12-14 14:47:42	[callStack: Process-Data]	[SUBITEM]	  Processed 70 / 100 items...
+2025-12-14 14:47:44	[callStack: Process-Data]	[SUBITEM]	  Processed 80 / 100 items...
+2025-12-14 14:47:45	[callStack: Process-Data]	[SUBITEM]	  Processed 90 / 100 items...
+2025-12-14 14:47:46	[callStack: Process-Data]	[SUBITEM]	  Processed 100 / 100 items...
+2025-12-14 14:47:46	[callStack: Process-Data]	[INFO]	Processing complete - Success: 100, Errors: 0
+2025-12-14 14:47:46	[callStack: Export-Results]	[SUCCESS]	Results exported to: .\Reports\Script Template_20251214_144746.csv
+2025-12-14 14:47:46	[callStack: Send-CompletionNotification]	[INFO]	Notification: Success - Script completed successfully. Processed 100 items.
+2025-12-14 14:47:46	[callStack: <ScriptBlock>]	[SUCCESS]	Script completed successfully
+2025-12-14 14:47:46	[callStack: <ScriptBlock>]	[INFO]	Total items processed: 100
+2025-12-14 14:47:46	[callStack: Invoke-Cleanup]	[INFO]	Performing cleanup...
+2025-12-14 14:47:46	[callStack: Disconnect-MgGraphAPI]	[SUCCESS]	Disconnected from Microsoft Graph
+2025-12-14 14:47:46	[callStack: Invoke-Cleanup]	[INFO]	Script duration: 00:00:15
+2025-12-14 14:47:46	[callStack: Invoke-Cleanup]	[SUCCESS]	Cleanup complete
+2025-12-14 14:47:46	[callStack: <ScriptBlock>]	[INFO]	Script ended at: 2025-12-14 14:47:46
+
+2025-12-14 14:48:39	[callstack: Import-RequiredModules<Begin>]	[HEADER]	=== Importing required modules... ===
+2025-12-14 14:48:39	[callstack: Import-RequiredModules<Process>]	[INFO]	Checking for module: Microsoft.Graph.Users
+2025-12-14 14:48:40	[callstack: Import-RequiredModules<Process>]	[SUCCESS]	Module imported: Microsoft.Graph.Users
+2025-12-14 14:48:40	[callstack: Import-RequiredModules<Process>]	[INFO]	Checking for module: Microsoft.Graph.Groups
+2025-12-14 14:48:41	[callstack: Import-RequiredModules<Process>]	[SUCCESS]	Module imported: Microsoft.Graph.Groups
+2025-12-14 14:48:41	[callstack: Import-RequiredModules<End>]	[SUCCESS]	All required modules loaded successfully
+
+2025-12-14 14:48:41	[callstack: Initialize-Script]	[HEADER]	=== Script Template v1.0.0 ===
+2025-12-14 14:48:41	[callstack: Initialize-Script]	[INFO]	Started at: 2025-12-14 14:48:41
+2025-12-14 14:48:41	[callstack: Initialize-Script]	[INFO]	User: brenn
+2025-12-14 14:48:41	[callstack: Initialize-Script]	[INFO]	Computer: ASUS-MAIN
+2025-12-14 14:48:41	[callstack: Initialize-Script]	[INFO]	PowerShell Version: 7.5.4
+2025-12-14 14:48:41	[callstack: Initialize-Script]	[INFO]	Log Mode: Daily
+2025-12-14 14:48:41	[callstack: Connect-GraphAPI]	[INFO]	Connecting to Microsoft Graph API...
+2025-12-14 14:48:41	[callstack: Connect-GraphAPI]	[SUCCESS]	Successfully connected to Microsoft Graph
+2025-12-14 14:48:43	[callstack: Get-MgGraphAPIPermissions]	[SUCCESS]	Service Principal: M365-PowerShell-Automation
+2025-12-14 14:48:43	[callstack: Get-MgGraphAPIPermissions]	[SUBITEM]	  Object ID: 8eda3f3a-d1c0-4a10-964b-1fd3a3bad1fe
+
+2025-12-14 14:48:43	[callstack: Get-MgGraphAPIPermissions]	[HEADER]	=== Application Permissions (App Roles) ===
+2025-12-14 14:48:43	[callstack: Get-MgGraphAPIPermissions]	[SUBITEM]	  • Directory.Read.All
+2025-12-14 14:48:43	[callstack: Get-MgGraphAPIPermissions]	[SUBITEM]	  • User.Read.All
+2025-12-14 14:48:43	[callstack: Get-MgGraphAPIPermissions]	[SUBITEM]	  • Organization.Read.All
+2025-12-14 14:48:43	[callstack: Get-MgGraphAPIPermissions]	[SUBITEM]	  • AuditLog.Read.All
+2025-12-14 14:48:43	[callstack: Get-MgGraphAPIPermissions]	[SUBITEM]	  • Reports.Read.All
+
+2025-12-14 14:48:43	[callstack: Get-MgGraphAPIPermissions]	[HEADER]	=== Delegated Permissions (OAuth2 Grants) ===
+2025-12-14 14:48:43	[callstack: Get-MgGraphAPIPermissions]	[SUBITEM]	  Resource: Microsoft Graph
+
+2025-12-14 14:48:43	[callstack: Get-MgGraphAPIPermissions]	[HEADER]	=== Summary ===
+2025-12-14 14:48:44	[callstack: Connect-GraphAPI]	[INFO]	Active permissions: 
+2025-12-14 14:48:44	[callstack: Get-YourData]	[INFO]	Retrieving data from Graph API...
+2025-12-14 14:48:44	[callstack: Get-YourData]	[SUCCESS]	Retrieved 100 items
+2025-12-14 14:48:44	[callstack: Process-Data]	[INFO]	Processing 100 items...
+2025-12-14 14:48:45	[callstack: Process-Data]	[SUBITEM]	  Processed 10 / 100 items...
+2025-12-14 14:48:46	[callstack: Process-Data]	[SUBITEM]	  Processed 20 / 100 items...
+2025-12-14 14:48:47	[callstack: Process-Data]	[SUBITEM]	  Processed 30 / 100 items...
+2025-12-14 14:48:48	[callstack: Process-Data]	[SUBITEM]	  Processed 40 / 100 items...
+2025-12-14 14:48:49	[callstack: Process-Data]	[SUBITEM]	  Processed 50 / 100 items...
+2025-12-14 14:48:50	[callstack: Process-Data]	[SUBITEM]	  Processed 60 / 100 items...
+2025-12-14 14:48:51	[callstack: Process-Data]	[SUBITEM]	  Processed 70 / 100 items...
+2025-12-14 14:48:52	[callstack: Process-Data]	[SUBITEM]	  Processed 80 / 100 items...
+2025-12-14 14:48:54	[callstack: Process-Data]	[SUBITEM]	  Processed 90 / 100 items...
+2025-12-14 14:48:55	[callstack: Process-Data]	[SUBITEM]	  Processed 100 / 100 items...
+2025-12-14 14:48:55	[callstack: Process-Data]	[INFO]	Processing complete - Success: 100, Errors: 0
+2025-12-14 14:48:55	[callstack: Export-Results]	[SUCCESS]	Results exported to: .\Reports\Script Template_20251214_144855.csv
+2025-12-14 14:48:55	[callstack: Send-CompletionNotification]	[INFO]	Notification: Success - Script completed successfully. Processed 100 items.
+2025-12-14 14:48:55	[callstack: <ScriptBlock>]	[SUCCESS]	Script completed successfully
+2025-12-14 14:48:55	[callstack: <ScriptBlock>]	[INFO]	Total items processed: 100
+2025-12-14 14:48:55	[callstack: Invoke-Cleanup]	[INFO]	Performing cleanup...
+2025-12-14 14:48:55	[callstack: Disconnect-MgGraphAPI]	[SUCCESS]	Disconnected from Microsoft Graph
+2025-12-14 14:48:55	[callstack: Invoke-Cleanup]	[INFO]	Script duration: 00:00:16
+2025-12-14 14:48:55	[callstack: Invoke-Cleanup]	[SUCCESS]	Cleanup complete
+2025-12-14 14:48:55	[callstack: <ScriptBlock>]	[INFO]	Script ended at: 2025-12-14 14:48:55
+
+2025-12-14 14:50:03	[callstacktrace: Import-RequiredModules<Begin>]	[HEADER]	=== Importing required modules... ===
+2025-12-14 14:50:03	[callstacktrace: Import-RequiredModules<Process>]	[INFO]	Checking for module: Microsoft.Graph.Users
+2025-12-14 14:50:04	[callstacktrace: Import-RequiredModules<Process>]	[SUCCESS]	Module imported: Microsoft.Graph.Users
+2025-12-14 14:50:04	[callstacktrace: Import-RequiredModules<Process>]	[INFO]	Checking for module: Microsoft.Graph.Groups
+2025-12-14 14:50:05	[callstacktrace: Import-RequiredModules<Process>]	[SUCCESS]	Module imported: Microsoft.Graph.Groups
+2025-12-14 14:50:05	[callstacktrace: Import-RequiredModules<End>]	[SUCCESS]	All required modules loaded successfully
+
+2025-12-14 14:50:05	[callstacktrace: Initialize-Script]	[HEADER]	=== Script Template v1.0.0 ===
+2025-12-14 14:50:05	[callstacktrace: Initialize-Script]	[INFO]	Started at: 2025-12-14 14:50:05
+2025-12-14 14:50:05	[callstacktrace: Initialize-Script]	[INFO]	User: brenn
+2025-12-14 14:50:05	[callstacktrace: Initialize-Script]	[INFO]	Computer: ASUS-MAIN
+2025-12-14 14:50:05	[callstacktrace: Initialize-Script]	[INFO]	PowerShell Version: 7.5.4
+2025-12-14 14:50:05	[callstacktrace: Initialize-Script]	[INFO]	Log Mode: Daily
+2025-12-14 14:50:05	[callstacktrace: Connect-GraphAPI]	[INFO]	Connecting to Microsoft Graph API...
+2025-12-14 14:50:05	[callstacktrace: Connect-GraphAPI]	[SUCCESS]	Successfully connected to Microsoft Graph
+2025-12-14 14:50:07	[callstacktrace: Get-MgGraphAPIPermissions]	[SUCCESS]	Service Principal: M365-PowerShell-Automation
+2025-12-14 14:50:07	[callstacktrace: Get-MgGraphAPIPermissions]	[SUBITEM]	  Object ID: 8eda3f3a-d1c0-4a10-964b-1fd3a3bad1fe
+
+2025-12-14 14:50:07	[callstacktrace: Get-MgGraphAPIPermissions]	[HEADER]	=== Application Permissions (App Roles) ===
+2025-12-14 14:50:07	[callstacktrace: Get-MgGraphAPIPermissions]	[SUBITEM]	  • Directory.Read.All
+2025-12-14 14:50:07	[callstacktrace: Get-MgGraphAPIPermissions]	[SUBITEM]	  • User.Read.All
+2025-12-14 14:50:07	[callstacktrace: Get-MgGraphAPIPermissions]	[SUBITEM]	  • Organization.Read.All
+2025-12-14 14:50:07	[callstacktrace: Get-MgGraphAPIPermissions]	[SUBITEM]	  • AuditLog.Read.All
+2025-12-14 14:50:07	[callstacktrace: Get-MgGraphAPIPermissions]	[SUBITEM]	  • Reports.Read.All
+
+2025-12-14 14:50:07	[callstacktrace: Get-MgGraphAPIPermissions]	[HEADER]	=== Delegated Permissions (OAuth2 Grants) ===
+2025-12-14 14:50:07	[callstacktrace: Get-MgGraphAPIPermissions]	[SUBITEM]	  Resource: Microsoft Graph
+
+2025-12-14 14:50:07	[callstacktrace: Get-MgGraphAPIPermissions]	[HEADER]	=== Summary ===
+2025-12-14 14:50:07	[callstacktrace: Connect-GraphAPI]	[INFO]	Active permissions: 
+2025-12-14 14:50:07	[callstacktrace: Get-YourData]	[INFO]	Retrieving data from Graph API...
+2025-12-14 14:50:07	[callstacktrace: Get-YourData]	[SUCCESS]	Retrieved 100 items
+2025-12-14 14:50:07	[callstacktrace: Process-Data]	[INFO]	Processing 100 items...
+2025-12-14 14:50:08	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 10 / 100 items...
+2025-12-14 14:50:09	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 20 / 100 items...
+2025-12-14 14:50:10	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 30 / 100 items...
+2025-12-14 14:50:12	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 40 / 100 items...
+2025-12-14 14:50:13	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 50 / 100 items...
+2025-12-14 14:50:14	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 60 / 100 items...
+2025-12-14 14:50:15	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 70 / 100 items...
+2025-12-14 14:50:16	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 80 / 100 items...
+2025-12-14 14:50:17	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 90 / 100 items...
+2025-12-14 14:50:18	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 100 / 100 items...
+2025-12-14 14:50:18	[callstacktrace: Process-Data]	[INFO]	Processing complete - Success: 100, Errors: 0
+2025-12-14 14:50:18	[callstacktrace: Export-Results]	[SUCCESS]	Results exported to: .\Reports\Script Template_20251214_145018.csv
+2025-12-14 14:50:18	[callstacktrace: Send-CompletionNotification]	[INFO]	Notification: Success - Script completed successfully. Processed 100 items.
+2025-12-14 14:50:18	[callstacktrace: <ScriptBlock>]	[SUCCESS]	Script completed successfully
+2025-12-14 14:50:18	[callstacktrace: <ScriptBlock>]	[INFO]	Total items processed: 100
+2025-12-14 14:50:18	[callstacktrace: Invoke-Cleanup]	[INFO]	Performing cleanup...
+2025-12-14 14:50:18	[callstacktrace: Disconnect-MgGraphAPI]	[SUCCESS]	Disconnected from Microsoft Graph
+2025-12-14 14:50:18	[callstacktrace: Invoke-Cleanup]	[INFO]	Script duration: 00:00:15
+2025-12-14 14:50:18	[callstacktrace: Invoke-Cleanup]	[SUCCESS]	Cleanup complete
+2025-12-14 14:50:18	[callstacktrace: <ScriptBlock>]	[INFO]	Script ended at: 2025-12-14 14:50:18
+
+2025-12-14 14:51:08	[callstacktrace: Import-RequiredModules<Begin>]	[HEADER]	=== Importing required modules... ===
+2025-12-14 14:51:08	[callstacktrace: Import-RequiredModules<Process>]	[INFO]	Checking for module: Microsoft.Graph.Users
+2025-12-14 14:51:09	[callstacktrace: Import-RequiredModules<Process>]	[SUCCESS]	Module imported: Microsoft.Graph.Users
+2025-12-14 14:51:09	[callstacktrace: Import-RequiredModules<Process>]	[INFO]	Checking for module: Microsoft.Graph.Groups
+2025-12-14 14:51:10	[callstacktrace: Import-RequiredModules<Process>]	[SUCCESS]	Module imported: Microsoft.Graph.Groups
+2025-12-14 14:51:10	[callstacktrace: Import-RequiredModules<End>]	[SUCCESS]	All required modules loaded successfully
+
+2025-12-14 14:51:10	[callstacktrace: Initialize-Script]	[HEADER]	=== Script Template v1.0.0 ===
+2025-12-14 14:51:10	[callstacktrace: Initialize-Script]	[INFO]	Started at: 2025-12-14 14:51:10
+2025-12-14 14:51:10	[callstacktrace: Initialize-Script]	[INFO]	User: brenn
+2025-12-14 14:51:10	[callstacktrace: Initialize-Script]	[INFO]	Computer: ASUS-MAIN
+2025-12-14 14:51:10	[callstacktrace: Initialize-Script]	[INFO]	PowerShell Version: 7.5.4
+2025-12-14 14:51:10	[callstacktrace: Initialize-Script]	[INFO]	Log Mode: Daily
+2025-12-14 14:51:10	[callstacktrace: Connect-GraphAPI]	[INFO]	Connecting to Microsoft Graph API...
+2025-12-14 14:51:10	[callstacktrace: Connect-GraphAPI]	[SUCCESS]	Successfully connected to Microsoft Graph
+2025-12-14 14:51:12	[callstacktrace: Get-MgGraphAPIPermissions]	[SUCCESS]	Service Principal: M365-PowerShell-Automation
+2025-12-14 14:51:12	[callstacktrace: Get-MgGraphAPIPermissions]	[SUBITEM]	  Object ID: 8eda3f3a-d1c0-4a10-964b-1fd3a3bad1fe
+
+2025-12-14 14:51:12	[callstacktrace: Get-MgGraphAPIPermissions]	[HEADER]	=== Application Permissions (App Roles) ===
+2025-12-14 14:51:12	[callstacktrace: Get-MgGraphAPIPermissions]	[SUBITEM]	  • Directory.Read.All
+2025-12-14 14:51:12	[callstacktrace: Get-MgGraphAPIPermissions]	[SUBITEM]	  • User.Read.All
+2025-12-14 14:51:12	[callstacktrace: Get-MgGraphAPIPermissions]	[SUBITEM]	  • Organization.Read.All
+2025-12-14 14:51:12	[callstacktrace: Get-MgGraphAPIPermissions]	[SUBITEM]	  • AuditLog.Read.All
+2025-12-14 14:51:12	[callstacktrace: Get-MgGraphAPIPermissions]	[SUBITEM]	  • Reports.Read.All
+
+2025-12-14 14:51:12	[callstacktrace: Get-MgGraphAPIPermissions]	[HEADER]	=== Delegated Permissions (OAuth2 Grants) ===
+2025-12-14 14:51:12	[callstacktrace: Get-MgGraphAPIPermissions]	[SUBITEM]	  Resource: Microsoft Graph
+
+2025-12-14 14:51:13	[callstacktrace: Get-MgGraphAPIPermissions]	[HEADER]	=== Summary ===
+2025-12-14 14:51:13	[callstacktrace: Connect-GraphAPI]	[INFO]	Active permissions: 
+2025-12-14 14:51:13	[callstacktrace: Get-YourData]	[INFO]	Retrieving data from Graph API...
+2025-12-14 14:51:13	[callstacktrace: Get-YourData]	[SUCCESS]	Retrieved 100 items
+2025-12-14 14:51:13	[callstacktrace: Process-Data]	[INFO]	Processing 100 items...
+2025-12-14 14:51:14	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 10 / 100 items...
+2025-12-14 14:51:15	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 20 / 100 items...
+2025-12-14 14:51:16	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 30 / 100 items...
+2025-12-14 14:51:17	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 40 / 100 items...
+2025-12-14 14:51:18	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 50 / 100 items...
+2025-12-14 14:51:19	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 60 / 100 items...
+2025-12-14 14:51:20	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 70 / 100 items...
+2025-12-14 14:51:21	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 80 / 100 items...
+2025-12-14 14:51:23	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 90 / 100 items...
+2025-12-14 14:51:24	[callstacktrace: Process-Data]	[SUBITEM]	  Processed 100 / 100 items...
+2025-12-14 14:51:24	[callstacktrace: Process-Data]	[INFO]	Processing complete - Success: 100, Errors: 0
+2025-12-14 14:51:24	[callstacktrace: Export-Results]	[SUCCESS]	Results exported to: .\Reports\Script Template_20251214_145124.csv
+2025-12-14 14:51:24	[callstacktrace: Send-CompletionNotification]	[INFO]	Notification: Success - Script completed successfully. Processed 100 items.
+2025-12-14 14:51:24	[callstacktrace: <ScriptBlock>]	[SUCCESS]	Script completed successfully
+2025-12-14 14:51:24	[callstacktrace: <ScriptBlock>]	[INFO]	Total items processed: 100
+2025-12-14 14:51:24	[callstacktrace: Invoke-Cleanup]	[INFO]	Performing cleanup...
+2025-12-14 14:51:24	[callstacktrace: Disconnect-MgGraphAPI]	[SUCCESS]	Disconnected from Microsoft Graph
+2025-12-14 14:51:24	[callstacktrace: Invoke-Cleanup]	[INFO]	Script duration: 00:00:16
+2025-12-14 14:51:24	[callstacktrace: Invoke-Cleanup]	[SUCCESS]	Cleanup complete
+2025-12-14 14:51:24	[callstacktrace: <ScriptBlock>]	[INFO]	Script ended at: 2025-12-14 14:51:24
