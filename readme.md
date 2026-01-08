@@ -11,18 +11,18 @@ A collection of PowerShell%20Scripts, modules, and technical documentation for s
 The **Technical Design Docs** section contains detailed documentation and workflow diagrams for key solutions and scripts in this repository. These documents provide in-depth technical overviews, process flows, and implementation details to support development, troubleshooting, and knowledge transfer.
 
 **OneDrive Prep Script**
-- [One Drive Prep Script - Logic Diagram](Technical%20Design%20Docs/One%20Drive%20Prep%20Script%20-%20Logic%20Diagram.pdf)
-- [One Drive Prep Script - Technical Documentation](Technical%20Design%20Docs/One%20Drive%20Prep%20Script%20-%20Technical%20Documentation.pdf)
+- [One Drive Prep Script - Logic Diagram](_Technical_Design_Docs/One%20Drive%20Prep%20Script%20-%20Logic%20Diagram.pdf)
+- [One Drive Prep Script - Technical Documentation](_Technical_Design_Docs/One%20Drive%20Prep%20Script%20-%20Technical%20Documentation.pdf)
 
 **Server management and provisioning workflows**
-- [Server Management Workflow](Technical%20Design%20Docs/Server%20Management%20Workflow.pdf)
-- [Server Provisioning Workflow](Technical%20Design%20Docs/Server%20Provisioning%20Workflow.pdf)
+- [Server Management Workflow](_Technical_Design_Docs/Server%20Management%20Workflow.pdf)
+- [Server Provisioning Workflow](_Technical_Design_Docs/Server%20Provisioning%20Workflow.pdf)
 
 **Active Directory design (OUs, GPOs, Groups)**
-- [Risk AD Design - OUs GPOs & Groups](Technical%20Design%20Docs/Risk%20AD%20Design%20-%20OUs%20GPOs%20%26%20Groups.pdf)
+- [Risk AD Design - OUs GPOs & Groups](_Technical_Design_Docs/Risk%20AD%20Design%20-%20OUs%20GPOs%20%26%20Groups.pdf)
 
 **Database schema design for VM deployment**
-- [VMDeploy-Database Schema Design](Technical%20Design%20Docs/VMDeploy-Database%20Schema%20Design.pdf)
+- [VMDeploy-Database Schema Design](_Technical_Design_Docs/VMDeploy-Database%20Schema%20Design.pdf)
 
 ### Documentation (Markdown)
 - [Configuring Execution Policies.md](Code_Examples/Brennan.CodeSigning/Docs/Configuring%20Execution%20Policies.md) - Guide to PowerShell execution policies.
