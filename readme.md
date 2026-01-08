@@ -3,7 +3,7 @@
 
 # Code & Documentation Examples
 
-A collection of PowerShell scripts, modules, and technical documentation for server management, automation, and reporting. This repository provides practical examples for automating VMware, Veeam, SQL Server, and other related infrastructure tasks.
+A collection of PowerShell%20Scripts, modules, and technical documentation for server management, automation, and reporting. This repository provides practical examples for automating VMware, Veeam, SQL Server, and other related infrastructure tasks.
 
 
 ## Technical Design Documentation
@@ -24,37 +24,48 @@ The **Technical Design Docs** section contains detailed documentation and workfl
 **Database schema design for VM deployment**
 - [VMDeploy-Database Schema Design](Technical%20Design%20Docs/VMDeploy-Database%20Schema%20Design.pdf)
 
-## PowerShell Scripts & Modules
 
+
+## Code_Examples Folder Contents
 
 ### Modules
-- [Brennan.PowerShell.Core](Code Examples/Brennan.PowerShell.Core/)
-   - Core utilities for Microsoft Graph connectivity, logging, and common automation functions. Includes:
-	   - [Connect-MgGraphAPI](Code%20Examples/Brennan.PowerShell.Core/Public/Connect-MgGraphAPI.ps1)
-	   - [Write-Log](Code%20Examples/Brennan.PowerShell.Core/Public/Write-Log.ps1)
+- [Brennan.CodeSigning](Code_Examples/Brennan.CodeSigning/) - PowerShell module for code signing and password encryption.
+- [Brennan.PowerShell.Core](Code_Examples/Brennan.PowerShell.Core/) - Core utilities for Graph API, logging, and automation.
+- [Brennan.PowerShell.VeeamReport](Code_Examples/Brennan.PowerShell.VeeamReport/) - Veeam backup and restore reporting automation.
+- [Brennan.SQL](Code_Examples/Brennan.SQL/) - SQL Server automation helpers and ADO.NET utilities.
 
-- [Brennan.PowerShell.VeeamReport](Code%20Examples/Brennan.PowerShell.VeeamReport/)
-   - Veeam reporting automation. Includes:
-	   - [Get-VeeamRestorePoints](Code%20Examples/Brennan.PowerShell.VeeamReport/Public/Get-VeeamRestorePoints.ps1): Collects and matches Veeam restore points with VM names.
-	   - [Send-EmailReport](Code%20Examples/Brennan.PowerShell.VeeamReport/Public/Send-EmailReport.ps1): Sends customizable email reports for VMs missing restore points.
-	   - [Get-ServerFromSQL](Code%20Examples/Brennan.PowerShell.VeeamReport/Public/Get-ServerFromSQL.ps1): Retrieves server records from SQL Server.
+### PowerShell Scripts
+- [Connect-ABAVBRServer.ps1](Code_Examples/PowerShell%20Scripts/Connect-ABAVBRServer.ps1) - Connects to a Veeam Backup & Replication server.
+- [Connect-ABAvCenters.ps1](Code_Examples/PowerShell%20Scripts/Connect-ABAvCenters.ps1) - Connects to multiple vCenter servers.
+- [ECI.EMI.Automation.VM.Prod.ps1](Code_Examples/PowerShell%20Scripts/ECI.EMI.Automation.VM.Prod.ps1) - VM automation for production environments.
+- [Get-ServerFromSQL.ps1](Code_Examples/PowerShell%20Scripts/Get-ServerFromSQL.ps1) - Retrieves server records from SQL Server.
+- [Get-ServersForReport.ps1](Code_Examples/PowerShell%20Scripts/Get-ServersForReport.ps1) - Gets a list of servers for reporting.
+- [Get-ServerState.ps1](Code_Examples/PowerShell%20Scripts/Get-ServerState.ps1) - Checks the state of servers.
+- [Get-ServerTagAssignments.ps1](Code_Examples/PowerShell%20Scripts/Get-ServerTagAssignments.ps1) - Retrieves server tag assignments.
+- [Get-TargetServers.ps1](Code_Examples/PowerShell%20Scripts/Get-TargetServers.ps1) - Gets target servers for automation tasks.
+- [Get-VeeamRestorePoints.ps1](Code_Examples/PowerShell%20Scripts/Get-VeeamRestorePoints.ps1) - Collects Veeam restore points for VMs.
+- [Import-ABAPfxCertificate.ps1](Code_Examples/PowerShell%20Scripts/Import-ABAPfxCertificate.ps1) - Imports a PFX certificate for code signing.
+- [Invoke-ADOcmd.ps1](Code_Examples/PowerShell%20Scripts/Invoke-ADOcmd.ps1) - Executes SQL commands using ADO.NET.
+- [New-EncryptedPassword.ps1](Code_Examples/PowerShell%20Scripts/New-EncryptedPassword.ps1) - Generates an AES-256 encrypted password.
+- [New-SignedScript.ps1](Code_Examples/PowerShell%20Scripts/New-SignedScript.ps1) - Digitally signs PowerShell scripts.
+- [Send-EmailReport.ps1](Code_Examples/PowerShell%20Scripts/Send-EmailReport.ps1) - Sends email reports for Veeam jobs.
+- [Write-ReportToSQL.ps1](Code_Examples/PowerShell%20Scripts/Write-ReportToSQL.ps1) - Writes report data to SQL Server.
+- [Write-ServerToSQL.ps1](Code_Examples/PowerShell%20Scripts/Write-ServerToSQL.ps1) - Writes server data to SQL Server.
+- [_VeeamReport.ps1](Code_Examples/PowerShell%20Scripts/_VeeamReport.ps1) - Generates and emails a report of servers without Veeam restore points.
 
-- [Brennan.CodeSigning](Code Examples/Brennan.CodeSigning/)
-   - Code signing and encryption utilities. Includes:
-	   - [New-EncryptedPassword](Code%20Examples/Brennan.CodeSigning/Public/New-EncryptedPassword.ps1): Generate AES-256 encrypted passwords.
-	   - [New-SignedScript](Code%20Examples/Brennan.CodeSigning/Public/New-SignedScript.ps1): Sign PowerShell scripts with a certificate.
-
-- [Brennan.SQL](Code Examples/Brennan.SQL/)
-   - SQL Server automation helpers. Includes:
-	   - [Invoke-ADOcmd](Code%20Examples/Brennan.SQL/Public/Invoke-ADOcmd.ps1): Lightweight ADO.NET SQL command execution.
-
-### Standalone Scripts
-- [Veeam-Report](Code%20Examples/PowerShell%20Scripts/_VeeamReport.ps1): Generates and emails a report of servers without Veeam restore points. Supports filtering by VM name, tags, and server record age.
-- [New-EncryptedPassword.ps1](Code%20Examples/PowerShell%20Scripts/New-EncryptedPassword.ps1) Standalone script to generate an encrypted password.
-- [New-SignedScript.ps1](Code%20Examples/PowerShell%20Scripts/New-SignedScript.ps1): Standalone script to sign PowerShell scripts.
-- [Invoke-ADOcmd.ps1](Code%20Examples/PowerShell%20Scripts/Invoke-ADOcmd.ps1): Standalone script for basic SQL Server connection using ADO.NET.
-- [Import-ABAPfxCertificate.ps1](Code%20Examples/PowerShell%20Scripts/Import-ABAPfxCertificate.ps1): Imports a PFX certificate for code signing.
-
+### Documentation (Markdown)
+- [Configuring Execution Policies.md](Code_Examples/Brennan.CodeSigning/Docs/Configuring%20Execution%20Policies.md) - Guide to PowerShell execution policies.
+- [Import-ABAPfxCertificate.md](Code_Examples/Brennan.CodeSigning/Docs/Import-ABAPfxCertificate.md) - How to import a PFX certificate for signing.
+- [New-EncryptedPassword.md](Code_Examples/Brennan.CodeSigning/Docs/New-EncryptedPassword.md) - Using the encrypted password utility.
+- [New-SignedScript.md](Code_Examples/Brennan.CodeSigning/Docs/New-SignedScript.md) - How to sign scripts.
+- [User Guide - Abacus-ScriptSigning.md](Code_Examples/Brennan.CodeSigning/Docs/User%20Guide%20-%20Abacus-ScriptSigning.md) - User guide for script signing.
+- [CLASSES.md](Code_Examples/Brennan.PowerShell.Core/Docs/CLASSES.md) - Class documentation for core module.
+- [CONFIGURATION.md](Code_Examples/Brennan.PowerShell.Core/Docs/CONFIGURATION.md) - Configuration guide for core module.
+- [ENUMS.md](Code_Examples/Brennan.PowerShell.Core/Docs/ENUMS.md) - Enum documentation for core module.
+- [EXAMPLES.md](Code_Examples/Brennan.PowerShell.Core/Docs/EXAMPLES.md) - Usage examples for core module.
+- [FUNCTIONS.md](Code_Examples/Brennan.PowerShell.Core/Docs/FUNCTIONS.md) - Functions reference for core module.
+- [GETTING-STARTED.md](Code_Examples/Brennan.PowerShell.Core/Docs/GETTING-STARTED.md) - Getting started guide for core module.
+- [Invoke-ADOcmd.md](Code_Examples/Brennan.SQL/Docs/Invoke-ADOcmd.md) - Documentation for Invoke-ADOcmd SQL utility.
+- [Notes.md](Code_Examples/Brennan.SQL/Docs/Notes.md) - Additional notes for SQL module.
 
 
-## Python Scripts & Modules
