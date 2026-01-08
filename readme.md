@@ -26,33 +26,34 @@ The **Technical Design Docs** section contains detailed documentation and workfl
 
 ## PowerShell Scripts & Modules
 
+
 ### Modules
-- [Brennan.PowerShell.Core](Brennan.PowerShell.Core/)
-	- Core utilities for Microsoft Graph connectivity, logging, and common automation functions. Includes:
-		- [Connect-MgGraphAPI](Brennan.PowerShell.Core/Public/Connect-MgGraphAPI.ps1): Connect to Microsoft Graph API.
-		- [Write-Log](Brennan.PowerShell.Core/Public/Write-Log.ps1): Structured logging for scripts and modules.
+- [Brennan.PowerShell.Core](Code Examples/Brennan.PowerShell.Core/)
+   - Core utilities for Microsoft Graph connectivity, logging, and common automation functions. Includes:
+	   - [Connect-MgGraphAPI](Code%20Examples/Brennan.PowerShell.Core/Public/Connect-MgGraphAPI.ps1)
+	   - [Write-Log](Code%20Examples/Brennan.PowerShell.Core/Public/Write-Log.ps1)
 
-- [Brennan.PowerShell.VeeamReport](Brennan.PowerShell.VeeamReport/)
-	- Veeam reporting automation. Includes:
-		- [Get-VeeamRestorePoints](Brennan.PowerShell.VeeamReport/Public/Get-VeeamRestorePoints.ps1): Collects and matches Veeam restore points with VM names.
-		- [Send-EmailReport](Brennan.PowerShell.VeeamReport/Public/Send-EmailReport.ps1): Sends customizable email reports for VMs missing restore points.
-		- [Get-ServerFromSQL](Brennan.PowerShell.VeeamReport/Public/Get-ServerFromSQL.ps1): Retrieves server records from SQL Server.
+- [Brennan.PowerShell.VeeamReport](Code%20Examples/Brennan.PowerShell.VeeamReport/)
+   - Veeam reporting automation. Includes:
+	   - [Get-VeeamRestorePoints](Code%20Examples/Brennan.PowerShell.VeeamReport/Public/Get-VeeamRestorePoints.ps1): Collects and matches Veeam restore points with VM names.
+	   - [Send-EmailReport](Code%20Examples/Brennan.PowerShell.VeeamReport/Public/Send-EmailReport.ps1): Sends customizable email reports for VMs missing restore points.
+	   - [Get-ServerFromSQL](Code%20Examples/Brennan.PowerShell.VeeamReport/Public/Get-ServerFromSQL.ps1): Retrieves server records from SQL Server.
 
-- [Brennan.CodeSigning](Brennan.CodeSigning/)
-	- Code signing and encryption utilities. Includes:
-		- [New-EncryptedPassword](Brennan.CodeSigning/Public/New-EncryptedPassword.ps1): Generate AES-256 encrypted passwords.
-		- [New-SignedScript](Brennan.CodeSigning/Public/New-SignedScript.ps1): Sign PowerShell scripts with a certificate.
+- [Brennan.CodeSigning](Code Examples/Brennan.CodeSigning/)
+   - Code signing and encryption utilities. Includes:
+	   - [New-EncryptedPassword](Code%20Examples/Brennan.CodeSigning/Public/New-EncryptedPassword.ps1): Generate AES-256 encrypted passwords.
+	   - [New-SignedScript](Code%20Examples/Brennan.CodeSigning/Public/New-SignedScript.ps1): Sign PowerShell scripts with a certificate.
 
-- [Brennan.SQL](Brennan.SQL/)
-	- SQL Server automation helpers. Includes:
-		- [Invoke-ADOcmd](Brennan.SQL/Public/Invoke-ADOcmd.ps1): Lightweight ADO.NET SQL command execution.
+- [Brennan.SQL](Code Examples/Brennan.SQL/)
+   - SQL Server automation helpers. Includes:
+	   - [Invoke-ADOcmd](Code%20Examples/Brennan.SQL/Public/Invoke-ADOcmd.ps1): Lightweight ADO.NET SQL command execution.
 
 ### Standalone Scripts
-- [Veeam-Report](PowerShell%20Scripts/_VeeamReport.ps1): Generates and emails a report of servers without Veeam restore points. Supports filtering by VM name, tags, and server record age.
-- [New-EncryptedPassword.ps1](PowerShell%20Scripts/New-EncryptedPassword.ps1): Standalone script to generate an encrypted password.
-- [New-SignedScript.ps1](PowerShell%20Scripts/New-SignedScript.ps1): Standalone script to sign PowerShell scripts.
-- [Invoke-ADOcmd.ps1](PowerShell%20Scripts/Invoke-ADOcmd.ps1): Standalone script for basic SQL Server connection using ADO.NET.
-- [Import-ABAPfxCertificate.ps1](PowerShell%20Scripts/Import-ABAPfxCertificate.ps1): Imports a PFX certificate for code signing.
+- [Veeam-Report](Code%20Examples/PowerShell%20Scripts/_VeeamReport.ps1): Generates and emails a report of servers without Veeam restore points. Supports filtering by VM name, tags, and server record age.
+- [New-EncryptedPassword.ps1](Code%20Examples/PowerShell%20Scripts/New-EncryptedPassword.ps1) Standalone script to generate an encrypted password.
+- [New-SignedScript.ps1](Code%20Examples/PowerShell%20Scripts/New-SignedScript.ps1): Standalone script to sign PowerShell scripts.
+- [Invoke-ADOcmd.ps1](Code%20Examples/PowerShell%20Scripts/Invoke-ADOcmd.ps1): Standalone script for basic SQL Server connection using ADO.NET.
+- [Import-ABAPfxCertificate.ps1](Code%20Examples/PowerShell%20Scripts/Import-ABAPfxCertificate.ps1): Imports a PFX certificate for code signing.
 
 
 
