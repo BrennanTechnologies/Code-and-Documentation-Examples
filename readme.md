@@ -24,9 +24,24 @@ The **Technical Design Docs** section contains detailed documentation and workfl
 **Database schema design for VM deployment**
 - [VMDeploy-Database Schema Design](Technical%20Design%20Docs/VMDeploy-Database%20Schema%20Design.pdf)
 
+### Documentation (Markdown)
+- [Configuring Execution Policies.md](Code_Examples/Brennan.CodeSigning/Docs/Configuring%20Execution%20Policies.md) - Guide to PowerShell execution policies.
+- [Import-ABAPfxCertificate.md](Code_Examples/Brennan.CodeSigning/Docs/Import-ABAPfxCertificate.md) - How to import a PFX certificate for signing.
+- [New-EncryptedPassword.md](Code_Examples/Brennan.CodeSigning/Docs/New-EncryptedPassword.md) - Using the encrypted password utility.
+- [New-SignedScript.md](Code_Examples/Brennan.CodeSigning/Docs/New-SignedScript.md) - How to sign scripts.
+- [User Guide - Abacus-ScriptSigning.md](Code_Examples/Brennan.CodeSigning/Docs/User%20Guide%20-%20Abacus-ScriptSigning.md) - User guide for script signing.
+- [CLASSES.md](Code_Examples/Brennan.PowerShell.Core/Docs/CLASSES.md) - Class documentation for core module.
+- [CONFIGURATION.md](Code_Examples/Brennan.PowerShell.Core/Docs/CONFIGURATION.md) - Configuration guide for core module.
+- [ENUMS.md](Code_Examples/Brennan.PowerShell.Core/Docs/ENUMS.md) - Enum documentation for core module.
+- [EXAMPLES.md](Code_Examples/Brennan.PowerShell.Core/Docs/EXAMPLES.md) - Usage examples for core module.
+- [FUNCTIONS.md](Code_Examples/Brennan.PowerShell.Core/Docs/FUNCTIONS.md) - Functions reference for core module.
+- [GETTING-STARTED.md](Code_Examples/Brennan.PowerShell.Core/Docs/GETTING-STARTED.md) - Getting started guide for core module.
+- [Invoke-ADOcmd.md](Code_Examples/Brennan.SQL/Docs/Invoke-ADOcmd.md) - Documentation for Invoke-ADOcmd SQL utility.
+- [Notes.md](Code_Examples/Brennan.SQL/Docs/Notes.md) - Additional notes for SQL module.
 
 
-## Code_Examples Folder Contents
+
+## Code Examples
 
 ### Modules
 - [Brennan.CodeSigning](Code_Examples/Brennan.CodeSigning/) - PowerShell module for code signing and password encryption.
@@ -52,20 +67,5 @@ The **Technical Design Docs** section contains detailed documentation and workfl
 - [Write-ReportToSQL.ps1](Code_Examples/PowerShell%20Scripts/Write-ReportToSQL.ps1) - Writes report data to SQL Server.
 - [Write-ServerToSQL.ps1](Code_Examples/PowerShell%20Scripts/Write-ServerToSQL.ps1) - Writes server data to SQL Server.
 - [_VeeamReport.ps1](Code_Examples/PowerShell%20Scripts/_VeeamReport.ps1) - Generates and emails a report of servers without Veeam restore points.
-
-### Documentation (Markdown)
-- [Configuring Execution Policies.md](Code_Examples/Brennan.CodeSigning/Docs/Configuring%20Execution%20Policies.md) - Guide to PowerShell execution policies.
-- [Import-ABAPfxCertificate.md](Code_Examples/Brennan.CodeSigning/Docs/Import-ABAPfxCertificate.md) - How to import a PFX certificate for signing.
-- [New-EncryptedPassword.md](Code_Examples/Brennan.CodeSigning/Docs/New-EncryptedPassword.md) - Using the encrypted password utility.
-- [New-SignedScript.md](Code_Examples/Brennan.CodeSigning/Docs/New-SignedScript.md) - How to sign scripts.
-- [User Guide - Abacus-ScriptSigning.md](Code_Examples/Brennan.CodeSigning/Docs/User%20Guide%20-%20Abacus-ScriptSigning.md) - User guide for script signing.
-- [CLASSES.md](Code_Examples/Brennan.PowerShell.Core/Docs/CLASSES.md) - Class documentation for core module.
-- [CONFIGURATION.md](Code_Examples/Brennan.PowerShell.Core/Docs/CONFIGURATION.md) - Configuration guide for core module.
-- [ENUMS.md](Code_Examples/Brennan.PowerShell.Core/Docs/ENUMS.md) - Enum documentation for core module.
-- [EXAMPLES.md](Code_Examples/Brennan.PowerShell.Core/Docs/EXAMPLES.md) - Usage examples for core module.
-- [FUNCTIONS.md](Code_Examples/Brennan.PowerShell.Core/Docs/FUNCTIONS.md) - Functions reference for core module.
-- [GETTING-STARTED.md](Code_Examples/Brennan.PowerShell.Core/Docs/GETTING-STARTED.md) - Getting started guide for core module.
-- [Invoke-ADOcmd.md](Code_Examples/Brennan.SQL/Docs/Invoke-ADOcmd.md) - Documentation for Invoke-ADOcmd SQL utility.
-- [Notes.md](Code_Examples/Brennan.SQL/Docs/Notes.md) - Additional notes for SQL module.
 
 
