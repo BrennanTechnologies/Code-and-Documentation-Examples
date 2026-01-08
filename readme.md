@@ -25,6 +25,8 @@ The **Technical Design Docs** section contains detailed documentation and workfl
 - [VMDeploy-Database Schema Design](Technical_Design_Docs/VMDeploy-Database%20Schema%20Design.pdf)
 
 ### Documentation (Markdown)
+For Brennan Technologies PowerShell modules and utilities, the following markdown documentation files are included:
+
 - [Configuring Execution Policies.md](Code_Examples/Brennan.CodeSigning/Docs/Configuring%20Execution%20Policies.md) - Guide to PowerShell execution policies.
 - [Import-ABAPfxCertificate.md](Code_Examples/Brennan.CodeSigning/Docs/Import-ABAPfxCertificate.md) - How to import a PFX certificate for signing.
 - [New-EncryptedPassword.md](Code_Examples/Brennan.CodeSigning/Docs/New-EncryptedPassword.md) - Using the encrypted password utility.
